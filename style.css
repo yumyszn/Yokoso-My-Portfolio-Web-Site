@@ -13,10 +13,10 @@
 }
 
 :root{
-    --bg-color: #F7FBFC;
-    --second-bg-color: #D6E6F2;
-    --main-color: #B9D7EA;
-    --text-color: #769FCD;
+    --bg-color: #021526;
+    --second-bg-color: #03346E;
+    --main-color: #6EACDA;
+    --text-color: #E2E2B6;
 }
 
 html {
@@ -29,3 +29,59 @@ body {
     color: var(--text-color);
 }
 /* RESET CSS END */
+
+
+
+/* HEADER START */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: slace(1.1);
+}
+
+.logo span{
+    color: var(--main-color);
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500px;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--main-color);
+    border-bottom: 3px solid transparent;
+}
+
+/* Sadece Telefonlar İçin Gözükecek */
+#menu-icon {
+    font-size: 3.6rem;
+    color:var(--main-color);
+    display: none;
+}
+/* HEADER END */
