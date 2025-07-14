@@ -1,0 +1,31 @@
+/* Raleway Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET CSS START */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #F7FBFC;
+    --second-bg-color: #D6E6F2;
+    --main-color: #B9D7EA;
+    --text-color: #769FCD;
+}
+
+html {
+    font-size:  60%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+/* RESET CSS END */
