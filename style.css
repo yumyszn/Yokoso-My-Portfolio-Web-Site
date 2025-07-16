@@ -143,4 +143,140 @@ section {
 .home-img img:hover {
     box-shadow: 0px 0px 25px var(--main-color), 0px 0px 50px var(--main-color), 0px 0px 100px var(--main-color);
 }
+
+.home-content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    font: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 300ms ease-in-out;
+}
+
+.social-icons a:hover {
+    color: var(--text-color);
+    transform: scale(1.4) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-group a:nth-of-type(2) {
+    background-color: black;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    color: black;
+}
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280;
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before{
+    content: "";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    height: 100%;
+    width: calc(100% + 8px);
+    position: absolute;
+    right: -8px;
+    border-left: 3px solid var(--bg-color);
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+ to{
+    border-left: 2px solid var(--main-color);
+ }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "Front-end Developer'ım";
+    }
+
+    21%, 40%{
+        content: "Back-end Developer'ım";
+    }
+
+    41%, 60%{
+        content: "Software Developer'ım";
+    }
+
+    61%, 80%{
+        content: "Full Stack Developer'ım";
+    }
+
+    81%, 100%{
+        content: "Sotfware Tester'ım";
+    }
+}
+
+@keyframes typing {
+    /* 5, 10, 15, 20, 25, 30, 35, 50, ... , 95 */
+
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
 /* HOME END */
