@@ -13,8 +13,8 @@
 }
 
 :root{
-    --bg-color: #080808;
-    --second-bg-color: #000000;
+    --bg-color: #030303;
+    --second-bg-color: #080808;
     --main-color: #0094FF;
     --text-color: #E6F5FF;
 }
@@ -43,7 +43,7 @@ section {
 
 /* HEADER START */
 .header {
-    background-color: var(--second-bg-color);
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
@@ -280,3 +280,18 @@ section {
     }
 }
 /* HOME END */
+
+
+
+/* PROJECTS START */
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.projects {
+    background-color: var(--second-bg-color);
+    padding: 100px 15px;
+}
+/* PROJECTS END */
