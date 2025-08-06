@@ -334,7 +334,9 @@
     <div class="modal" id="modal">
         <div class="modal-content">
             <form action="" autocomplete="off">
-                <p><span>Email'e</span> gelen 6 haneli kodu giriniz.</p>
+                <span class="truee"></span>
+                <span class="falsee"></span>
+                <p class="modal-p"><span>Email'e</span> gelen 6 haneli kodu giriniz.</p>
                 <div class="confirmCode">
                     <input type="text" id="numbersOnly" autocomplete="off" maxlength="6" placeholder="Kodu Giriniz">
                 </div>
@@ -342,10 +344,22 @@
             <span class="close-button" id="close-button"> <i class="fa-solid fa-x"></i> </span>
             <p id="repeatCode">Tekrar Kod Gönderiniz</p>
             <br>
-            <button id="confirmSubmit">Doğrula</button>
+            <button id="confirm-submit">Doğrula</button>
         </div>
     </div>
     <!-- CONTACT MODAL END -->
+
+    <!-- CONTACT VERIFICATION NOTICE MODAL START -->
+    <div class="verification-notice">
+        <div class="notice-contect">
+            <div class="inform">
+                <h1>Doğrulama Başarılı</h1>
+                <span>Sayfayı Kapatabilirsiniz</span>
+            </div>
+            <button class="btn" id="btn-inform">Tamam</button>
+        </div>
+    </div>
+    <!-- CONTACT VERIFICATION NOTICE MODAL END -->
 
 
     <script src="script.js"></script>

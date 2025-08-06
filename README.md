@@ -14,12 +14,15 @@ under...574 px,
 To Do List {
 
     Contact Modal{
-        1. HTML - Create to Modal - (done)
+        1. HTML - Create to Modal (done)
         2. CSS - Modal Design (done)
         3. JS - User Interaction (done)
-        4. CSS - MEDİA Queries
-        5. Node.js - Submit Code to Email
-        6. Node.js - Verify Code and Send to My Email
+        4. CSS - MEDİA Queries (done) 
+        5. HTML - Create to Modal Verification (done)
+        6. CSS - Create to Modal Verification (done)
+        7. JS - Create to Modal Verification (done)
+        8. Node.js - Submit Code to Email
+        9. Node.js - Verify Code and Send to My Email
     }
 
     Services Scroll {

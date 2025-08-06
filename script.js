@@ -12,10 +12,15 @@ menuIcon.onclick = () => {
 
 // * CONTACT MODAL ON/OFF START
 const submitModal = document.querySelector("#submit-btn");
-const closeModalBtn = document.querySelector("#confirmSubmit");
+const confirmSubmit = document.querySelector("#confirm-submit");
 const closeModalIcon = document.querySelector("#close-button");
 const content = document.getElementById('webContents');
 const numbersOnly = document.getElementById('numbersOnly');
+const falsee = document.querySelector(".falsee");
+const truee = document.querySelector(".truee");
+const verificationNotice = document.querySelector(".verification-notice");
+const verificationNoticeBtn = document.querySelector("#btn-inform")
+
 
 submitModal.addEventListener('click', function(e) {
   e.preventDefault(); // varsayılan davranışı durdur
@@ -24,12 +29,30 @@ submitModal.addEventListener('click', function(e) {
   content.style.pointerEvents = 'none'; 
 });
 
-closeModalBtn.addEventListener('click', () => {
-    document.querySelector('.modal').style.display = "none";
+confirmSubmit.addEventListener('click', function ()  {
+    if (numbersOnly.value.length < 6) {
+        console.log("Lütfen Kod Giriniz.");
+        numbersOnly.value = '';
+
+        truee.style.display = "none";
+        falsee.style.display = "";
+        falsee.innerHTML=("Kod yanlış");
+    } else {
+        console.log("Kod Doğru")
+        verificationNotice.style.display = "flex";
+        modal.style.display = 'flex';
+        content.style.filter = 'blur(5px)';
+        numbersOnly.value = '';
+        falsee.style.display = "none";
+        truee.style.display = "";
+        document.querySelector('.modal').style.display = "none";
+    }
+});
+
+verificationNoticeBtn.addEventListener('click', () => {
+    verificationNotice.style.display = "none";
     content.style.filter = 'none';
     content.style.pointerEvents = 'auto';
-    numbersOnly.value= '';
-    
 });
 
 closeModalIcon.addEventListener('click', () => {
