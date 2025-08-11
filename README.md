@@ -32,5 +32,4 @@ To Do List {
     }
 
     1. CSS, JS - Dark-Light Theme
-    2   . CSS, JS - Services Abbreviation on/off
 }
